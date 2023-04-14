@@ -2,7 +2,7 @@ import React from 'react'
 import './App.css'
 import data from './data'
 
-console.log(data)
+
 
 
 import Navbar from "./Navbar"
@@ -13,18 +13,10 @@ export default function App() {
 
   const cardHtml = data.map((item) => {
     return <Card
-    openSpots={item.openSpots}
       key={item.id}
-      img={item.coverImg}
-      rating={item.stats.rating}
-      reviewCount={item.stats.reviewCount}
-      country={item.location}
-      title={item.title}
-      price={item.price}
+      item={item}
     />
   })
-
-  console.log(cardHtml)
 
   return (
     <div className='app'>
