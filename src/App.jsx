@@ -13,6 +13,7 @@ export default function App() {
 
   const cardHtml = data.map((item) => {
     return <Card
+    openSpots={item.openSpots}
       key={item.id}
       img={item.coverImg}
       rating={item.stats.rating}
