@@ -64,6 +64,16 @@ section {
 .card {
   width: 175px;
   font-size: 12px;
+  position: relative;
+}
+
+.badge {
+  position: absolute;
+  background-color: white;
+  top: 6px;
+  left: 6px;
+  padding: 2px;
+  border-radius: 2px;
 }
 
 .card--image {
